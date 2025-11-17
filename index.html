@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Botequim Okê</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-color">
+    <div class="container col-12">
+      <nav class="navbar navbar-expand-lg col-12">
+        <div class="container-fluid">
+          <div class="col-3">
+            <a class="navbar-brand" href="#">
+              <img id="logo" src="images/logo.png" alt="logo botequim oke" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse col-8"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu col-8">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Página Inicial</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cardápio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Karaokê</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre-nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+            <a class="btn btn-outline-success btn-reserva col-2"> Reservar </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="bg-image col-12 row-10">
+        <h1 class="featured-title">Sua noite de estrela<br />começa aqui</h1>
+        <p class="featured-text">
+          Viva uma experiência única em nossas salas temáticas com o melhor da
+          música<br />brasileira e petiscos de água na boca.
+        </p>
+        <a class="btn btn-outline-success btn-reserva col-2">
+          Reserve sua sala!
+        </a>
+      </div>
+
+      <div class="card-container">
+        <div class="card card-home">
+          <div class="card-body">
+            <h2 class="card-title">Nossas salas temáticas</h2>
+            <section
+              class="carousel slide"
+              id="postsCarousel"
+              data-bs-ride="carousel"
+            >
+              <div class="container pt-0 mt-2">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <div class="card h-100 room-card">
+                          <div class="card-img-top card-img-top-250">
+                            <img
+                              class="img-fluid"
+                              src="images/sala-cafe.png"
+                              alt="Sala Café"
+                            />
+                          </div>
+                          <div class="card-body pt-2">
+                            <h5 class="text-wide p-b-2">Café Parisiense</h5>
+                            <p class="small room-card-description">
+                              Capacidade 30 pessoas
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mb-3">
+                        <div class="card h-100 room-card">
+                          <div class="card-img-top card-img-top-250">
+                            <img
+                              class="img-fluid"
+                              src="images/sala-cassino.png"
+                              alt="Sala Cassino Las Vegas"
+                            />
+                          </div>
+                          <div class="card-body pt-2">
+                            <h5 class="text-wide p-b-2">Cassino Las Vegas</h5>
+                            <p class="small room-card-description">
+                              Capacidade 25 pessoas
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <div class="card h-100 room-card">
+                          <div class="card-img-top card-img-top-250">
+                            <img
+                              class="img-fluid"
+                              src="images/sala-anos50.png"
+                              alt="Sala Anos50"
+                            />
+                          </div>
+                          <div class="card-body pt-2">
+                            <h5 class="text-wide p-b-2">Anos50</h5>
+                            <p class="small room-card-description">
+                              Capacidade 20 pessoas
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mb-3">
+                        <div class="card h-100 room-card">
+                          <div class="card-img-top card-img-top-250">
+                            <img
+                              class="img-fluid"
+                              src="images/sala-cabare.png"
+                              alt="Sala Cabaré"
+                            />
+                          </div>
+                          <div class="card-body pt-2">
+                            <h5 class="text-wide p-b-2">Cabaré</h5>
+                            <p class="small room-card-description">
+                              Capacidade 18 pessoas
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <div class="card h-100 room-card">
+                          <div class="card-img-top card-img-top-250">
+                            <img
+                              class="img-fluid"
+                              src="images/sala-futurista.png"
+                              alt="Sala Futurista"
+                            />
+                          </div>
+                          <div class="card-body pt-2">
+                            <h5 class="text-wide p-b-2">Futurista</h5>
+                            <p class="small room-card-description">
+                              Capacidade 16 pessoas
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mb-3">
+                        <div class="card h-100 room-card">
+                          <div class="card-img-top card-img-top-250">
+                            <img
+                              class="img-fluid"
+                              src="images/espaco-oke.png"
+                              alt="Espaço Okê"
+                            />
+                          </div>
+                          <div class="card-body pt-2">
+                            <h5 class="text-wide p-b-2">Espaço Okê</h5>
+                            <p class="small room-card-description">
+                              Capacidade 60 pessoas
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 text-end lead control-carrocel">
+                    <a
+                      class="btn btn-secondary-outline prev"
+                      href="#"
+                      title="go back"
+                      data-bs-target="#postsCarousel"
+                      data-bs-slide="prev"
+                    >
+                      <i class="fa fa-lg fa-chevron-left"></i>
+                    </a>
+                    <a
+                      class="btn btn-secondary-outline next"
+                      href="#"
+                      title="more"
+                      data-bs-target="#postsCarousel"
+                      data-bs-slide="next"
+                    >
+                      <i class="fa fa-lg fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <a class="btn btn-outline-success btn-reserva col-12">
+            Ver todas as salas
+          </a>
+        </div>
+        <div class="card card-home">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Card subtitle
+            </h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/carrocel.js"></script>
+  </body>
+</html>

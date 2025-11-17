@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #333333;
+}
+
+.bg-color {
+  width: 100vw;
+  background-color: #fff8f0;
+}
+
+#logo {
+  width: 180px;
+}
+
+.menu {
+  gap: 20px;
+  justify-content: center;
+}
+.menu li {
+  font-weight: 700;
+}
+.menu li a:hover {
+  color: #fc8c90;
+}
+.active {
+  color: #ff5a5f !important;
+  font-weight: 800;
+}
+.btn-reserva {
+  border-radius: 30px;
+  background-color: #ff5a5f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+.btn-reserva:hover {
+  background-color: #ffffff;
+  color: #ff5a5f;
+}
+
+.bg-image {
+  max-width: 1440px;
+  height: 800px;
+  background: url("/images/destaque.png") no-repeat;
+  text-align: center;
+  align-content: center;
+  color: #ffffff;
+}
+.featured-title {
+  font-size: 85px;
+  font-weight: 800;
+}
+.featured-text {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+.card-home {
+  width: 600px;
+  height: 600px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 4px 4px 25px #00000033;
+  padding: 50px 30px;
+}
+.card-title {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.room-card{
+  border-radius: 25px;
+  border: none;
+  box-shadow: 4px 4px 15px #00000033;
+  background-color: #fff8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.room-card:hover {
+  transform: scale(1.08);
+  box-shadow: 8px 8px 20px #00000055;
+  z-index: 10; 
+  position: relative;
+}
+.room-card-description {
+  font-weight: 400;
+  color: #757575;
+}
+
+.carousel-item-prev,
+.carousel-item-next,
+.carousel-item.active {
+  display: flex;
+  max-height: 300px;
+  margin-top: 30px;
+}
+
+/* control image height */
+.card-img-top-250 {
+  max-height: 250px;
+  overflow: hidden;
+}
+
+/* smoother transitions */
+.carousel-inner > .carousel-item.next.left,
+.carousel-inner > .carousel-item.prev.right {
+  transition: all 1s ease;
+}
+
+.carousel-inner {
+  padding: 35px;
+  margin: -35px;
+  width: calc(100% + 40px);
+}
+
+.carousel-item {
+  padding-left: 12px;
+}
+
+.control-carrocel {
+  position: relative;
+  top: 270px;
+  display: flex;
+  justify-content: space-between;
+}
