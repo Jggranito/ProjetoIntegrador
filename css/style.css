@@ -43,11 +43,15 @@
   background-color: #ffffff;
   color: #ff5a5f;
 }
+.btn-padrao:active {
+  background-color: #ff5a5f !important;
+  color: #ffffff !important;
+}
 
 .bg-image {
   max-width: 1440px;
   height: 800px;
-  background: url("/images/destaque.png") no-repeat;
+  background: url("/images/index/destaque.png") no-repeat;
   text-align: center;
   align-content: center;
   color: #ffffff;
