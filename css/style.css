@@ -8,6 +8,8 @@
 .bg-color {
   width: 100vw;
   background-color: #fff8f0;
+  display: flex;
+  justify-content: center;
 }
 
 #logo {
@@ -126,12 +128,19 @@
 .carousel-item {
   padding-left: 12px;
 }
+.carousel-item p{
+  text-align: center;
+}
 
 .control-carrocel {
   position: relative;
-  top: 270px;
+  top: 260px;
   display: flex;
   justify-content: space-between;
+}
+.btn-carrocel {
+  background-color: #EEEEEE;
+  border-radius: 30px;
 }
 
 .card-body-2{

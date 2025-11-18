@@ -12,66 +12,68 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="bg-color">
-    <div class="container col-12">
-      <nav class="navbar navbar-expand-lg col-12">
-        <div class="container-fluid">
-          <div class="col-3">
-            <a class="navbar-brand" href="#">
-              <img id="logo" src="images/logo.png" alt="logo botequim oke" />
-            </a>
+    <div class="container row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg col-12">
+          <div class="container-fluid">
+            <div class="col-3">
+              <a class="navbar-brand" href="#">
+                <img id="logo" src="images/logo.png" alt="logo botequim oke" />
+              </a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse col-8"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu col-8">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Página Inicial</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Karaokê</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre-nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+              <a class="btn btn-outline-success btn-padrao col-6 col-md-3"> Reservar </a>
+            </div>
           </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse col-8"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu col-8">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Página Inicial</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cardápio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Karaokê</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sobre-nós</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
-              </li>
-            </ul>
-            <a class="btn btn-outline-success btn-padrao col-2"> Reservar </a>
-          </div>
+        </nav>
+  
+        <div class="bg-image col-12 row-10">
+          <h1 class="featured-title">Sua noite de estrela<br />começa aqui</h1>
+          <p class="featured-text">
+            Viva uma experiência única em nossas salas temáticas com o melhor da
+            música<br />brasileira e petiscos de água na boca.
+          </p>
+          <a class="btn btn-outline-success btn-padrao col-6 col-md-3">
+            Reserve sua sala!
+          </a>
         </div>
-      </nav>
+      </div>
 
-      <!-- <div class="bg-image col-12 row-10">
-        <h1 class="featured-title">Sua noite de estrela<br />começa aqui</h1>
-        <p class="featured-text">
-          Viva uma experiência única em nossas salas temáticas com o melhor da
-          música<br />brasileira e petiscos de água na boca.
-        </p>
-        <a class="btn btn-outline-success btn-padrao col-2">
-          Reserve sua sala!
-        </a>
-      </div> -->
-
-      <div class="card-container">
-        <div class="card card-home">
+      <div class="row card-container">
+        <div class="card card-home col-12 col-md-6">
           <div class="card-body">
             <h2 class="card-title">Nossas salas temáticas</h2>
             <section
@@ -202,7 +204,7 @@
                   </div>
                   <div class="col-12 text-end lead control-carrocel">
                     <a
-                      class="btn btn-secondary-outline prev"
+                      class="btn btn-secondary-outline prev btn-carrocel"
                       href="#"
                       title="go back"
                       data-bs-target="#postsCarousel"
@@ -211,7 +213,7 @@
                       <i class="fa fa-lg fa-chevron-left"></i>
                     </a>
                     <a
-                      class="btn btn-secondary-outline next"
+                      class="btn btn-secondary-outline next btn-carrocel"
                       href="#"
                       title="more"
                       data-bs-target="#postsCarousel"
@@ -228,7 +230,7 @@
             Ver todas as salas
           </a>
         </div>
-        <div class="card card-home">
+        <div class="card card-home col-12 col-md-6">
           <div class="card-body card-body-2">
             <h5 class="card-title">Destaques do Menu</h5>
             <div class="container-card">
