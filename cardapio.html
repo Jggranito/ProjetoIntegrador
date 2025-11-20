@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/cardapio.css" />
+  <link rel="icon" href="/images/favicon/favicon.png" type="image/x-icon" />
+  <title>Botequim Okê - Cardápio</title>
+</head>
+
+<body class="bg-color">
+  <div class="container">
+    <header class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg col-12">
+          <div class="container-fluid">
+            <div class="col-3">
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" src="images/index/logo.png" alt="logo botequim oke" />
+              </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-9" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu col-12 col-lg-8">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="cardapio.html">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="karaoke.html">Karaokê</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+              <a class="btn btn-outline-success btn-padrao col-12 col-lg-3">
+                Reservar
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <span class="row line"></span>
+
+    <div class="row">
+      <div class="col-12 main">
+        <h2 class="tittle">Nossos Sabores</h2>
+        <div class="container-fluid card-cardapio">
+          <div class="card border-0">
+
+            <div class="card-header bg-white border-0 pt-4 px-4">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active rounded-pill" id="pills-bebidas-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-bebidas" type="button" role="tab" aria-controls="pills-bebidas"
+                    aria-selected="true">🍻 Bebidas</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link rounded-pill" id="pills-chapas-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-chapas" type="button" role="tab" aria-controls="pills-chapas"
+                    aria-selected="false">🥩 Chapas</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link rounded-pill" id="pills-pasteis-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-pasteis" type="button" role="tab" aria-controls="pills-pasteis"
+                    aria-selected="false">🥟 Pasteis</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link rounded-pill" id="pills-petiscos-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-petiscos" type="button" role="tab" aria-controls="pills-petiscos"
+                    aria-selected="false">🍟 Petiscos</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link rounded-pill" id="pills-sanduiches-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-sanduiches" type="button" role="tab" aria-controls="pills-sanduiches"
+                    aria-selected="false">🍔 Sanduiches</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link rounded-pill" id="pills-sugestoes-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-sugestoes" type="button" role="tab" aria-controls="pills-sugestoes"
+                    aria-selected="false">👨‍🍳 Sugestões do Chef</button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-body">
+              <div class="tab-content" id="pills-tabContent">
+
+                <div class="tab-pane fade" id="pills-chapas" role="tabpanel" aria-labelledby="pills-chapas-tab">
+                  <div class="d-flex align-items-center mb-4">
+                    <img src="images/cardapio/3x1-file-mignon.jpg" class="rounded" width="80" height="80"
+                      alt="TÁBUA 3 EM 1 FILÉ MINEIRA">
+                    <div class="ms-3 w-100">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="mb-1">TÁBUA 3 EM 1</h5>
+                        <span class="fw-bold">R$ 119,90</span>
+                      </div>
+                      <small class="text-muted">(FILÉ MIGNON, BATATA E CALABRESA)</small>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center mb-4">
+                    <img src="images/cardapio/3x1-carne-seca.jpg" class="rounded" width="80" height="80"
+                      alt="TÁBUA 3 EM 1 CARNE SECA">
+                    <div class="ms-3 w-100">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="mb-1">TÁBUA 3 EM 1</h5>
+                        <span class="fw-bold">R$ 124,90</span>
+                      </div>
+                      <small class="text-muted">(CARNE SECA, AIPIN E CALABRESA)</small>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center mb-4">
+                    <img src="images/cardapio/contra-file.jpg" class="rounded" width="80" height="80"
+                      alt="CONTRA FILÉ ACEBOLADO C/FRITAS OU AIPIN">
+                    <div class="ms-3 w-100">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="mb-1">CONTRA FILÉ ACEBOLADO C/FRITAS OU AIPIN</h5>
+                        <span class="fw-bold">R$ 78,90</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center mb-4">
+                    <img src="images/cardapio/calabresa-com-fritas.jpg" class="rounded" width="80" height="80"
+                      alt="LINGUIÇA CALABRESA ACEBOLADA C/FRITAS OU AIPIN">
+                    <div class="ms-3 w-100">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="mb-1">LINGUIÇA CALABRESA ACEBOLADA C/FRITAS OU AIPIN</h5>
+                        <span class="fw-bold">R$ 58,90</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center mb-4">
+                    <img src="images/cardapio/linguiça-mineira-acebolada.jpg" class="rounded" width="80" height="80"
+                      alt="LINGUIÇA MINEIRA ACEBOLADA">
+                    <div class="ms-3 w-100">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="mb-1">LINGUIÇA MINEIRA ACEBOLADA</h5>
+                        <span class="fw-bold">R$ 49,90</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center mb-4">
+                    <img src="images/cardapio/linguiça-mineira-flambada.jpg" class="rounded" width="80" height="80"
+                      alt="LINGUIÇA MINEIRA ACEBOLADA">
+                    <div class="ms-3 w-100">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="mb-1">LINGUIÇA MINEIRA FLAMBADA NA CACHAÇA</h5>
+                        <span class="fw-bold">R$ 49,90</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-petiscos" role="tabpanel" aria-labelledby="pills-petiscos-tab">
+                  <div class="d-flex align-items-center mb-4">
+                    <img src="foto-aipim.jpg" class="rounded" width="80" height="80">
+                    <div class="ms-3 w-100">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="mb-1">Aipim Frito</h5>
+                        <span class="fw-bold">R$ 31,90</span>
+                      </div>
+                      <small class="text-muted">Porção de cubos de aipim fritos...</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-sugestoes" role="tabpanel" aria-labelledby="pills-sugestoes-tab">
+                  <p>Conteúdo das sugestões do chef vai aqui...</p>
+                </div>
+
+                <div class="tab-pane fade show active" id="pills-bebidas" role="tabpanel"
+                  aria-labelledby="pills-bebidas-tab">
+                  <div class="accordion" id="accordionBebidas">
+                    <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-dark" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseCervejas">
+                          🍺 Cervejas e Chopp
+                        </button>
+                      </h2>
+                      <div id="collapseCervejas" class="accordion-collapse collapse "
+                        data-bs-parent="#accordionBebidas">
+                        <h3 class="p-3">CERVEJAS 600ML</h3>
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/amstel-600.jpg" class="rounded" width="80" height="80"
+                              alt="AMSTEL 600ml">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">AMSTEL</h5>
+                                <span class="fw-bold">R$ 11,90</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/budweiser-600.jpg" class="rounded" width="80" height="80"
+                              alt="BUDWEISER 600ml">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">BUDWEISER</h5>
+                                <span class="fw-bold">R$ 13,90</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/heineken-600.jpg" class="rounded" width="80" height="80"
+                              alt="HEINEKEN 600ml">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">HEINEKEN</h5>
+                                <span class="fw-bold">R$ 17,90</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/spaten-600.jpg" class="rounded" width="80" height="80"
+                              alt="SPATEN 600ml">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">SPATEN</h5>
+                                <span class="fw-bold">R$ 14,50</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/stella-600.jpg" class="rounded" width="80" height="80"
+                              alt="STELLA ARTOIS 600ml">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">STELLA ARTOIS</h5>
+                                <span class="fw-bold">R$ 15,50</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/duplo-malte-600.jpg" class="rounded" width="80" height="80"
+                              alt="BRAHMA DUPLO MALTE 600ml">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">BRAHMA DUPLO MALTE</h5>
+                                <span class="fw-bold">R$ 13,50</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/original-600.jpg" class="rounded" width="80" height="80"
+                              alt="ORIGINAL 600ml">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">ORIGINAL</h5>
+                                <span class="fw-bold">R$ 13,90</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/eisenbahn-600.jpg" class="rounded" width="80" height="80"
+                              alt="EISENBAHN 600ml">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">EISENBAHN</h5>
+                                <span class="fw-bold">R$ 12,90</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <h3 class="p-3">CHOPP</h3>
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/chopp.jpg" class="rounded" width="80" height="80"
+                              alt="CHOPP TULIPA">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">CHOPP</h5>
+                                <span class="fw-bold">R$ 6,90</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/caneca-zero-grau.jpg" class="rounded" width="80" height="80"
+                              alt="CANECA ZERO GRAU">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">CANECA ZERO GRAU</h5>
+                                <span class="fw-bold">R$ 8,90</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/torre-chopp.jpg" class="rounded" width="80" height="80"
+                              alt="TORRE DE CHOPP">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">TORRE DE CHOPP</h5>
+                                <span class="fw-bold">R$ 47,00</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/chopp-vinho.jpg" class="rounded" width="80" height="80"
+                              alt="CHOPP DE VINHO CANECA ZERO GRAU">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">CHOPP DE VINHO CANECA ZERO GRAU</h5>
+                                <span class="fw-bold">R$ 9,90</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <h3 class="p-3">LONG NECK</h3>
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/budweiser-600.jpg" class="rounded" width="80" height="80"
+                              alt="BUDWEISER LONG NECK">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">BUDWEISER LONG NECK</h5>
+                                <span class="fw-bold">R$ 9,50</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/heineken-600.jpg" class="rounded" width="80" height="80"
+                              alt="HEINEKEN LONG NECK">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">HEINEKEN LONG NECK (NORMAL E ZERO)</h5>
+                                <span class="fw-bold">R$ 10,90</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/corona.jpg" class="rounded" width="80" height="80"
+                              alt="CCORONA LONG NECK">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">CORONA LONG NECK</h5>
+                                <span class="fw-bold">R$ 10,90</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/stella-600.jpg" class="rounded" width="80" height="80"
+                              alt="STELLA ARTOIS LONG NECK">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">STELLA ARTOIS LONG NECK</h5>
+                                <span class="fw-bold">R$ 10,00</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-body p-3">
+                          <div class="d-flex align-items-center">
+                            <img src="images/cardapio/skol-beats.jpg" class="rounded" width="80" height="80"
+                              alt="SKOL BEATS AZUL">
+                            <div class="ms-3 w-100">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="mb-1">SKOL BEATS AZUL</h5>
+                                <span class="fw-bold">R$ 12,90</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-dark" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseDrinks">
+                          🍹 Drinks e Caipirinhas
+                        </button>
+                      </h2>
+                      <div id="collapseDrinks" class="accordion-collapse collapse" data-bs-parent="#accordionBebidas">
+                        <div class="accordion-body p-0">
+                          <h3 class="p-3">DRINKOKÊ</h3>
+                          <div class="accordion-body p-3">
+                            <div class="d-flex align-items-center">
+                              <img src="images/cardapio/" class="rounded" width="80" height="80" alt="">
+                              <div class="ms-3 w-100">
+                                <div class="d-flex justify-content-between">
+                                  <h5 class="mb-1">ARLINDO CRUZ</h5>
+                                  <span class="fw-bold">R$ 25,90</span>
+                                </div>
+                                <small class="text-muted">(RUM + LICOR DE CHOCOLATE + LEITE DE COCO + LEITE CONDENSADO + SUCO DE ABACAXI + ACHOCOLATADO)</small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-body p-3">
+                            <div class="d-flex align-items-center">
+                              <img src="images/cardapio/" class="rounded" width="80" height="80" alt="">
+                              <div class="ms-3 w-100">
+                                <div class="d-flex justify-content-between">
+                                  <h5 class="mb-1">DJAVAN</h5>
+                                  <span class="fw-bold">R$ 25,90</span>
+                                </div>
+                                <small class="text-muted">(RUM + SUCO DE LIMÃO + GRANADINI)</small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-body p-3">
+                            <div class="d-flex align-items-center">
+                              <img src="images/cardapio/" class="rounded" width="80" height="80" alt="">
+                              <div class="ms-3 w-100">
+                                <div class="d-flex justify-content-between">
+                                  <h5 class="mb-1">SEU JORGE</h5>
+                                  <span class="fw-bold">R$ 25,90</span>
+                                </div>
+                                <small class="text-muted">(LICOR DE KIWI + SUCO DE LARANJA + VODKA PRETA)</small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-body p-3">
+                            <div class="d-flex align-items-center">
+                              <img src="images/cardapio/" class="rounded" width="80" height="80" alt="">
+                              <div class="ms-3 w-100">
+                                <div class="d-flex justify-content-between">
+                                  <h5 class="mb-1">RITA LEE</h5>
+                                  <span class="fw-bold">R$ 25,90</span>
+                                </div>
+                                <small class="text-muted">(MORANGO + ABACAXI + VODKA)</small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-body p-3">
+                            <div class="d-flex align-items-center">
+                              <img src="images/cardapio/" class="rounded" width="80" height="80" alt="">
+                              <div class="ms-3 w-100">
+                                <div class="d-flex justify-content-between">
+                                  <h5 class="mb-1">GONZAGUINHA</h5>
+                                  <span class="fw-bold">R$ 25,90</span>
+                                </div>
+                                <small class="text-muted">(VODKA + CRANBERRY + GOTAS DE LIMÃO + CONTREAU)</small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-body p-3">
+                            <div class="d-flex align-items-center">
+                              <img src="images/cardapio/" class="rounded" width="80" height="80" alt="">
+                              <div class="ms-3 w-100">
+                                <div class="d-flex justify-content-between">
+                                  <h5 class="mb-1">SANDRA DE SÁ</h5>
+                                  <span class="fw-bold">R$ 25,90</span>
+                                </div>
+                                <small class="text-muted">(RUM - LICOR DE CHOCOLATE - LICOR DE CAFÉ)</small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-body p-3">
+                            <div class="d-flex align-items-center">
+                              <img src="images/cardapio/" class="rounded" width="80" height="80" alt="">
+                              <div class="ms-3 w-100">
+                                <div class="d-flex justify-content-between">
+                                  <h5 class="mb-1">ZECA PAGODINHO</h5>
+                                  <span class="fw-bold">R$ 25,90</span>
+                                </div>
+                                <small class="text-muted">(MORANGO + ABACAXI + CACHAÇA + CONTREAU)</small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-body p-3">
+                            <div class="d-flex align-items-center">
+                              <img src="images/cardapio/" class="rounded" width="80" height="80" alt="">
+                              <div class="ms-3 w-100">
+                                <div class="d-flex justify-content-between">
+                                  <h5 class="mb-1">CARMEN MIRANDA</h5>
+                                  <span class="fw-bold">R$ 25,90</span>
+                                </div>
+                                <small class="text-muted">(GIN + MORANGO + MANGA)</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-dark" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseVinhosEDestilados">
+                          🍷 Vinhos e Destilados
+                        </button>
+                      </h2>
+                      <div id="collapseVinhosEDestilados" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionBebidas">
+                      </div>
+                    </div>
+
+                    <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-dark" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseSemAlcool">
+                          🥤 Refrigerantes e Sucos
+                        </button>
+                      </h2>
+                      <div id="collapseSemAlcool" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionBebidas">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
