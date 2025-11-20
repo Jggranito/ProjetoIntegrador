@@ -1,5 +1,6 @@
 **COPY&TEXT HEADER**
 
+<<<<<<< HEAD
 <header class="row">
       <div class="col-12">
         <nav class="navbar navbar-expand-lg col-12">
@@ -40,3 +41,51 @@
         </nav>
       </div>
     </header>
+=======
+<div class="container col-12">
+      <nav class="navbar navbar-expand-lg col-12">
+        <div class="container-fluid">
+          <div class="col-3">
+            <a class="navbar-brand" href="#">
+              <img id="logo" src="images/karaoke/logo.png" alt="logo botequim oke" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse col-8"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu col-8">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Página Inicial</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cardápio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Karaokê</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre-nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+            <a class="btn btn-outline-success btn-padrao col-2"> Reservar </a>
+          </div>
+        </div>
+      </nav>
+>>>>>>> 2d81ebf29b35294a455eaf719225dbd9034d1460

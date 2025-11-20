@@ -1,0 +1,4 @@
+.first_row_footer {
+    display: flex;
+    flex-direction: row;
+}
