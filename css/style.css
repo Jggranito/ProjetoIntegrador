@@ -301,4 +301,7 @@ body {
   .segunda-coluna{
     gap: 50px;
   }
+  .icons {
+    justify-content: center;
+  }
 }
