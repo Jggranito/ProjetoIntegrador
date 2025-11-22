@@ -41,3 +41,25 @@
 .nav-link {
     color: #333333;
 }
+
+@media (max-width: 576px) {
+    .product-price {
+        flex-direction: column;
+        text-align: center;
+    }
+    .product-description {
+        text-align: center;
+    }
+    .text-muted{
+        display: none;
+    }
+    .card-cardapio {
+        margin-bottom: 50px;
+    }
+    .line {
+        margin: 0 !important;
+    }
+    footer{
+        margin: 0 !important;
+    }
+}
