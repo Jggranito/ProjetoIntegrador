@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+body {
+    padding-top: 100px; /* Ajuste esse valor conforme a altura do seu menu */
+}
+
 .bg-color {
   background-color: #fff8f0;
   display: flex;
