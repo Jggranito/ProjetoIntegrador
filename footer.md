@@ -1,3 +1,5 @@
+## HTML
+
 <footer class="row">
     <div class="container-fluid p-0">
         <div class="col-12 footer-container">
@@ -41,3 +43,43 @@
         </div>
     </div>
 </footer>
+
+## CSS
+
+.footer-container {
+  min-height: 360px;
+  background-color: #ffffff;
+  justify-items: center;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 50px;
+}
+.footer-content p{
+  font-size: 13px;
+  margin: 16px 0;
+}
+.segunda-coluna {
+  display: flex;
+  flex-wrap: wrap;
+}
+.segunda-coluna h3{
+  margin-bottom: 40px;
+}
+.segunda-coluna p{
+  margin: 10px 0;
+}
+.icons {
+  display: flex;
+  gap: 16px;
+  font-size: 25px;
+}
+.footer-line {
+  width: 95%;
+}
+.ultima-linha {
+  margin-top: 40px;
+  padding-bottom: 1px;
+  text-align: center;
+}

@@ -1,4 +1,74 @@
-.first_row_footer {
-    display: flex;
-    flex-direction: row;
+:root {
+  /* Ajuste da cor para combinar com o design*/
+  --cor-fundo: #fdfbf7; 
+}
+
+.karaoke-content {
+  /* Definição da altura */
+  min-height: 60vh; 
+  
+  /* Cor de fundo de segurança (caso a imagem não carregue) */
+  background-color: var(--cor-fundo);
+  background-image: 
+    /* Camada 1 (Topo): Gradiente que vai do transparente para a cor sólida embaixo */
+    linear-gradient(to bottom, 
+      rgba(253, 251, 247, 0.4) 0%,   /* Começa levemente transparente no topo */
+      rgba(253, 251, 247, 0.8) 60%,  /* Começa a ficar sólido no meio */
+      var(--cor-fundo) 100%          /* Termina totalmente sólido na cor do site */
+    ),
+    /* Camada 2 (Fundo): A imagem das ondas sonoras */
+    url('../images/karaoke/background_karaoke.png');
+
+  /* Ajustes de posicionamento */
+  background-size: cover;    /* Cobre toda a área */
+  background-position: top center; /* Foca no topo da imagem */
+  background-repeat: no-repeat;
+
+  /* FAZER DEPOIS:
+  Responsivo no desktop -> A imagem não está aparecendo de maneira correta */;
+}
+
+.double-cards {
+    justify-content: center;
+    gap: 5rem;
+}
+
+
+/*footer*/
+.footer-container {
+  min-height: 360px;
+  background-color: #ffffff;
+  justify-items: center;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 50px;
+}
+.footer-content p{
+  font-size: 13px;
+  margin: 16px 0;
+}
+.segunda-coluna {
+  display: flex;
+  flex-wrap: wrap;
+}
+.segunda-coluna h3{
+  margin-bottom: 40px;
+}
+.segunda-coluna p{
+  margin: 10px 0;
+}
+.icons {
+  display: flex;
+  gap: 16px;
+  font-size: 25px;
+}
+.footer-line {
+  width: 95%;
+}
+.ultima-linha {
+  margin-top: 40px;
+  padding-bottom: 1px;
+  text-align: center;
 }
