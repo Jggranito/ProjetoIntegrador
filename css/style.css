@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.line{
+.line {
   height: 1px;
   background-color: #333333;
 }
@@ -21,22 +21,27 @@
 #logo {
   width: 180px;
 }
+
 .menu {
   gap: 20px;
   justify-content: center;
 }
+
 .menu li {
   font-weight: 700;
   text-align: center;
 
 }
+
 .menu li a:hover {
   color: #fc8c90;
 }
+
 .active {
   color: #ff5a5f !important;
   font-weight: 800;
 }
+
 .btn-padrao {
   border-radius: 30px;
   background-color: #ff5a5f;
@@ -46,10 +51,12 @@
   font-weight: 700;
   font-size: 20px;
 }
+
 .btn-padrao:hover {
   background-color: #ffffff;
   color: #ff5a5f;
 }
+
 .btn-padrao:active {
   background-color: #ff5a5f !important;
   color: #ffffff !important;
@@ -63,10 +70,12 @@
   align-content: center;
   color: #ffffff;
 }
+
 .featured-title {
   font-size: 85px;
   font-weight: 800;
 }
+
 .featured-text {
   font-size: 24px;
   font-weight: 500;
@@ -80,6 +89,7 @@
   padding: 80px 0;
   gap: 20px;
 }
+
 .card-home {
   width: 600px;
   height: 600px;
@@ -88,11 +98,14 @@
   box-shadow: 4px 4px 25px #00000033;
   padding: 50px 30px;
 }
+
 .card-title {
   font-weight: 700;
   font-size: 40px;
+  text-align: center;
 }
-.room-card{
+
+.room-card {
   border-radius: 25px;
   border: none;
   box-shadow: 4px 4px 15px #00000033;
@@ -100,12 +113,14 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
 }
+
 .room-card:hover {
   transform: scale(1.08);
   box-shadow: 8px 8px 20px #00000055;
-  z-index: 10; 
+  z-index: 10;
   position: relative;
 }
+
 .room-card-description {
   font-weight: 400;
   color: #757575;
@@ -118,14 +133,16 @@
   max-height: 300px;
   margin-top: 30px;
 }
+
 /* control image height */
 .card-img-top-250 {
   max-height: 250px;
   overflow: hidden;
 }
+
 /* smoother transitions */
-.carousel-inner > .carousel-item.next.left,
-.carousel-inner > .carousel-item.prev.right {
+.carousel-inner>.carousel-item.next.left,
+.carousel-inner>.carousel-item.prev.right {
   transition: all 1s ease;
 }
 
@@ -135,18 +152,27 @@
   width: calc(100% + 40px);
   height: 380px;
 }
+
+@media (max-width: 576px) {
+  .carousel-inner {
+    padding: 0;
+    overflow: unset;
+    margin-top: -15px;
+    margin-left: -20px;
+  }
+}
+
 .carousel-item {
   padding-left: 12px;
 }
-.carousel-item p{
-  text-align: center;
-}
+
 .control-carrocel {
   position: relative;
   top: 290px;
   display: flex;
   justify-content: space-between;
 }
+
 .btn-carrocel {
   background-color: #EEEEEE;
   width: 50px;
@@ -155,41 +181,48 @@
   font-size: 30px;
   padding: 2px;
 }
-.card-body-2{
+
+.card-body-2 {
   display: flex;
   flex-direction: column;
   padding: 0 16px;
   justify-content: space-between;
 }
+
 .container-card {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin: 30px 0;
 }
+
 .card-iten {
   display: flex;
   gap: 20px;
   align-items: flex-end;
 }
-.card-iten h6{
+
+.card-iten h6 {
   color: #333333;
   font-size: 16px;
   font-weight: 800;
 }
-.card-iten p{
+
+.card-iten p {
   color: #757575;
   font-size: 12px;
   font-weight: 400;
 
   align-items: flex-end;
 }
-.card-iten h6{
+
+.card-iten h6 {
   color: #333333;
   font-size: 16px;
   font-weight: 800;
 }
-.card-iten p{
+
+.card-iten p {
   color: #757575;
   font-size: 12px;
   font-weight: 400;
@@ -200,33 +233,41 @@
   background-color: #ffffff;
   justify-items: center;
 }
+
 .footer-content {
   display: flex;
   flex-wrap: wrap;
   padding: 20px 50px;
 }
-.footer-content p{
+
+.footer-content p {
   font-size: 13px;
   margin: 16px 0;
 }
+
 .segunda-coluna {
   display: flex;
   flex-wrap: wrap;
 }
-.segunda-coluna h3{
+
+.segunda-coluna h3 {
   margin-bottom: 40px;
 }
-.segunda-coluna p{
+
+.segunda-coluna p {
   margin: 10px 0;
 }
+
 .icons {
   display: flex;
   gap: 16px;
   font-size: 25px;
 }
+
 .footer-line {
   width: 95%;
 }
+
 .ultima-linha {
   margin-top: 40px;
   padding-bottom: 1px;
