@@ -29,8 +29,8 @@
 }
 
 .double-cards {
-    justify-content: center;
-    gap: 5rem;
+  justify-content: center;
+  gap: 5rem;
 }
 
 
@@ -71,4 +71,44 @@
   margin-top: 40px;
   padding-bottom: 1px;
   text-align: center;
+}
+
+/*Estilo geral dos Cards*/
+.card-custom {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /*Sombra*/
+  overflow: hidden; /* Garante que a imagem não saia da borda arredondada */
+  transition: transform 0.3s ease;
+  background-color: #fff;
+  min-height: 450px; /* Altura mínima para consistência */
+}
+.card-custom:hover {
+  transform: translateY(-5px); /* O card sobe levemente */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* --- CONFIGS DAS IMAGENS DO CARROSSEL --- */
+.carousel-img {
+  height: 250px; /* Altura fixa para todas as imagens */
+  object-fit: cover; /* A MÁGICA: Corta a imagem para caber sem esticar/deformar */
+  width: 100%;
+  margin-left: 3%;
+}
+
+/*Primeiro card (que não tem carrossel) */
+.card-header-fixo {
+  height: 250px;
+  width: 100%;
+  background: linear-gradient(135deg, #ff5e62, #5e2129); /*Paleta de cores: cor dos botões + logo*/
+}
+
+/* Ajustes finos no corpo do card */
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+  color: #333;
 }
