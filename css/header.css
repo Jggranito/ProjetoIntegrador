@@ -1,0 +1,52 @@
+/* header.css */
+
+/* Ajuste para compensar o menu fixo */
+body {
+    padding-top: 100px; 
+}
+
+/* Estilos do Logo */
+#logo {
+  width: 180px;
+}
+
+/* Estilos do Menu de Navegação */
+.menu {
+  gap: 20px;
+  justify-content: center;
+}
+
+.menu li {
+  font-weight: 700;
+  text-align: center;
+}
+
+.menu li a:hover {
+  color: #fc8c90;
+}
+
+.active {
+  color: #ff5a5f !important;
+  font-weight: 800;
+}
+
+/* Botão Padrão (Usado no Header) */
+.btn-padrao {
+  border-radius: 30px;
+  background-color: #ff5a5f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.btn-padrao:hover {
+  background-color: #ffffff;
+  color: #ff5a5f;
+}
+
+.btn-padrao:active {
+  background-color: #ff5a5f !important;
+  color: #ffffff !important;
+}
