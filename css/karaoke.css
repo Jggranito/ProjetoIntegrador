@@ -33,46 +33,6 @@
   gap: 5rem;
 }
 
-
-/*footer*/
-.footer-container {
-  min-height: 360px;
-  background-color: #ffffff;
-  justify-items: center;
-}
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px 50px;
-}
-.footer-content p{
-  font-size: 13px;
-  margin: 16px 0;
-}
-.segunda-coluna {
-  display: flex;
-  flex-wrap: wrap;
-}
-.segunda-coluna h3{
-  margin-bottom: 40px;
-}
-.segunda-coluna p{
-  margin: 10px 0;
-}
-.icons {
-  display: flex;
-  gap: 16px;
-  font-size: 25px;
-}
-.footer-line {
-  width: 95%;
-}
-.ultima-linha {
-  margin-top: 40px;
-  padding-bottom: 1px;
-  text-align: center;
-}
-
 /*Estilo geral dos Cards*/
 .card-custom {
   border: none;
@@ -82,9 +42,6 @@
   transition: transform 0.3s ease;
   background-color: #fff;
   min-height: 450px; /* Altura mínima para consistência */
-}
-.card-custom:hover {
-  transform: translateY(-5px); /* O card sobe levemente */
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
@@ -93,7 +50,6 @@
   height: 250px; /* Altura fixa para todas as imagens */
   object-fit: cover; /* A MÁGICA: Corta a imagem para caber sem esticar/deformar */
   width: 100%;
-  margin-left: 3%;
 }
 
 /*Primeiro card (que não tem carrossel) */
@@ -111,4 +67,46 @@
 .card-title {
   margin-bottom: 1rem;
   color: #333;
+}
+
+.carousel-control-prev {
+  top: 230px;
+}
+
+.carousel-control-next {
+  top: 230px;
+}
+
+.carousel-control-next-icon {
+  background-color: #5e2129;
+  border-radius: 25%;
+}
+
+.carousel-control-prev-icon {
+  background-color: #5e2129;
+  border-radius: 25%;
+}
+
+.text-room {
+  margin-top: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.carousel-item {
+    transition: opacity 0.6s ease-in-out !important; /* Força uma transição suave */
+}
+.legenda-fluida {
+  padding: 2rem;
+  min-height: 180px; /* IMPORTANTE: Altura fixa para o card não ficar "dançando" se o texto mudar de tamanho */
+  opacity: 0; 
+  transform: translateY(10px);
+  transition: all 0.5s ease-out;
+}
+
+/* Quando o slide fica ativo (active), o texto aparece */
+.carousel-item.active .legenda-fluida {
+  opacity: 1;
+  transform: translateY(0);
 }
