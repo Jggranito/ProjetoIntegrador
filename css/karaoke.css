@@ -64,49 +64,82 @@
   padding: 2rem;
 }
 
-.card-title {
-  margin-bottom: 1rem;
-  color: #333;
+/* --- CONFIGS DAS IMAGENS DO CARROSSEL --- */
+.carousel-img {
+  height: 250px; 
+  object-fit: cover; 
+  width: 100%;
+  /* Importante: para a imagem não "pular" na transição */
+  display: block; 
 }
 
-.carousel-control-prev {
-  top: 230px;
+/* Ajuste específico para o Iframe do Spotify */
+.carousel-item iframe {
+  /* Garante que o iframe respeite o arredondamento superior do card */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /* Remove arredondamento inferior se houver texto embaixo */
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-.carousel-control-next {
-  top: 230px;
-}
-
-.carousel-control-next-icon {
-  background-color: #5e2129;
-  border-radius: 25%;
-}
-
-.carousel-control-prev-icon {
-  background-color: #5e2129;
-  border-radius: 25%;
-}
-
-.text-room {
-  margin-top: 100px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
+/* --- TRANSIÇÕES SUAVES (Salas e Spotify) --- */
 .carousel-item {
-    transition: opacity 0.6s ease-in-out !important; /* Força uma transição suave */
-}
-.legenda-fluida {
-  padding: 2rem;
-  min-height: 180px; /* IMPORTANTE: Altura fixa para o card não ficar "dançando" se o texto mudar de tamanho */
-  opacity: 0; 
-  transform: translateY(10px);
-  transition: all 0.5s ease-out;
+  /* Isso garante que TANTO a imagem quanto o Iframe mudem suavemente */
+  transition: opacity 0.8s ease-in-out !important;
 }
 
-/* Quando o slide fica ativo (active), o texto aparece */
+/* --- TEXTO DENTRO DO SLIDE (Apenas para as salas) --- */
+.legenda-fluida {
+  padding: 1.5rem;
+  min-height: 200px; 
+  opacity: 0; 
+  transform: translateY(15px);
+  transition: all 0.6s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .carousel-item.active .legenda-fluida {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* --- CONTROLES (SETINHAS) --- */
+/* Isso conserta o visual "quebrado" das setas */
+.carousel-control-prev, 
+.carousel-control-next {
+  bottom: auto;
+  opacity: 0.9;
+  width: 10%;
+}
+
+/* Ajuste específico para as setas da SALA (Imagem 250px) */
+#carouselSalas .carousel-control-prev, 
+#carouselSalas .carousel-control-next {
+  height: 250px; /* A seta só existe na altura da foto */
+}
+
+/* Ajuste específico para as setas do SPOTIFY (Iframe 352px) */
+#carouselExample .carousel-control-prev, 
+#carouselExample .carousel-control-next {
+  height: 352px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #5e2129;
+  border-radius: 50%;
+  padding: 15px;
+  background-size: 50%; 
+}
+
+.card-custom {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  overflow: hidden; 
+  background-color: #fff;
+  min-height: 400px; 
 }
