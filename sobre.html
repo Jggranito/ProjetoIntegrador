@@ -14,7 +14,7 @@
 </head>
 
 <body class="bg-color">
-  <div class="container col-12">
+  <div class="container">
     <header class="row">
       <div class="col-12">
         <nav class="navbar navbar-expand-lg col-12 fixed-top bg-color">
@@ -38,10 +38,10 @@
                   <a class="nav-link" href="cardapio.html">Cardápio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="karaoke.html">Karaokê</a>
+                  <a class="nav-link" href="karaoke.html">Karaokê</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Sobre nós</a>
+                  <a class="nav-link active" href="#">Sobre nós</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contato</a>
@@ -55,71 +55,107 @@
         </nav>
       </div>
     </header>
-    <main class="row main-sobre">
+    <div class="row">
       <div class="col-12 titulo-sobre">
-        <h1>Sobre-nós</h1>
+        <h1 class="text-center sobre-title">Sobre-nós</h1>
         <span class="line"></span>
       </div>
-      <div class="col-12 double-cards">
-        <div class="card" style="width: 18rem;">
-            <img src="images/sobre/fachada.webp" class="card-img-top fachada" alt="img_fachada">
+    </div>
+    <main class="row double-cards">
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4 img-esquerda">
+            <img src="images/sobre/fachada.webp" class="img-fluid rounded-start" alt="img_fachada">
+          </div>
+          <div class="col-md-8">
             <div class="card-body">
-              <h1 class="title-card">Bem-vindo ao Botequim Okê</h1>
-              <p class="card-text">Aqui, a tradição dos botequins brasileiros encontra a alegria contagiante do karaokê.<br> 
-                Nossa missão é criar um espaço acolhedor e divertido onde amigos podem se reunir, soltar a voz e celebrar a vida.<br> 
-                Acreditamos que a música tem o poder de unir as pessoas, e combinada com petiscos deliciosos e drinks gelados, a experiência se torna inesquecível.<br> 
-                Venha fazer parte da nossa história!</p>
+              <h2 class="card-title fw-bold card-titulo">Seja bem-vindo ao Botequim Okê!</h2>
+              <p class="card-text fs-5 fst-italic">Aqui, a tradição dos botequins brasileiros encontra a alegria contagiante do karaokê.<br> 
+            Nossa missão é criar um espaço acolhedor e divertido onde amigos podem se reunir, soltar a voz e celebrar a vida.<br> 
+            Acreditamos que a música tem o poder de unir as pessoas, e combinada com petiscos deliciosos e drinks gelados, a experiência se torna inesquecível.<br> 
+            Venha fazer parte da nossa história!</p>
             </div>
-        <span class="line-sobre"></span>
-        <div class="card" style="width: 18rem;">
-            <div class="card-body outer-critics">
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+          </div>
         </div>
       </div>
+      <span class="line-sobre"></span>
+      </div>
+      <div class="row d-flex justify-content-center align-items-center depoimentos-section">
+        <div class="card col-9 depoimentos-card">
+          <div id="carouselDepoimentos" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">  
+              <div class="carousel-item active">
+                <div class="d-flex flex-column align-items-center justify-content-center p-4">
+                  <div class="avatar-container mb-3">
+                    <img src="images/sobre/d-account.jpg" class="user-avatar" alt="Foto de Daniel">
+                  </div>
+                  
+                  <h5 class="fw-bold black mb-1 text-depoimento">Daniel Souza</h5>
+                  <div class="text-warning mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+
+                  <div class="review-content">
+                    <i class="bi bi-quote fs-1 text-danger opacity-25"></i>
+                    <p class="card-text text-center fst-italic fs-4 text-depoimento">
+                      Estive ontem com um grupo de 15 amigos, na sala futurista e não tenho o que reclamar. Espaço super agradável e divertido... Indico demais!"
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex flex-column align-items-center justify-content-center p-4">
+                  <div class="avatar-container mb-3">
+                    <img src="images/sobre/t-account.png" class="user-avatar" alt="Foto de Thais">
+                  </div>
+                  <h5 class="fw-bold mb-1 text-depoimento">Thais Santos</h5>
+                  <div class="text-warning mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="review-content">
+                    <i class="bi bi-quote fs-1 text-danger opacity-25"></i>
+                    <p class="card-text text-center fst-italic fs-4 text-depoimento">
+                      Experiência muito positiva. Reservei a sala Futurista para um aniversário... Os pratos e bebidas chegaram rápido e sem erro nos pedidos."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex flex-column align-items-center justify-content-center p-4">
+                  <div class="avatar-container mb-3">
+                    <img src="images/sobre/v-account.jpg" class="user-avatar" alt="Foto de Victor">
+                  </div>
+                  <h5 class="fw-bold mb-1 text-depoimento">Victor Alves</h5>
+                  <div class="text-warning mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="review-content">
+                    <i class="bi bi-quote fs-1 text-danger opacity-25"></i>
+                    <p class="card-text text-center fst-italic fs-4 text-depoimento">
+                      "Minha esposa comemorou aniversário lá... Cerveja gelada num preço bom, bons petiscos e ainda tem sinuca! Certamente voltarei em breve."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true" style="background-size: 50%"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true" style="background-size: 50%"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="row p-0 map">
+      <h3 class="text-center fw-bold">Venha nos visitar!</h3>
+    </section>
+    <div class="maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.6422211413997!2d-43.26236422486254!3d-22.926563679241163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997d17f1d9fac1%3A0xa23dd5839938e184!2sBotequim%20Ok%C3%AA!5e0!3m2!1spt-BR!2sbr!4v1765240781771!5m2!1spt-BR!2sbr" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <footer class="row p-0">
       <div class="container-fluid p-0">
         <div class="col-12 footer-container">
