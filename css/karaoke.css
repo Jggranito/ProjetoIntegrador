@@ -21,7 +21,7 @@
 
   /* Ajustes de posicionamento */
   background-size: cover;    /* Cobre toda a área */
-  background-position: top center; /* Foca no topo da imagem */
+  background-position: center; /* Foca no topo da imagem */
   background-repeat: no-repeat;
 
   /* FAZER DEPOIS:
@@ -99,6 +99,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .carousel-item.active .legenda-fluida {
