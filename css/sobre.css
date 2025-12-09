@@ -6,6 +6,14 @@
     margin-bottom: 1.5rem;
 }
 
+#img-fachada {
+    height: 350px !important;
+}
+
+.card-texto {
+    margin-top: 4rem;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     
     /*TABLET E AFINS*/
@@ -13,7 +21,6 @@
         height: stretch;
         object-fit: cover;
     }
-    
 }
 
 .icon-account {
@@ -23,7 +30,7 @@
     margin-right: 1rem;
 }
 
-/* Card dos avatares*/
+/*Card dos avatares*/
 .user-avatar {
     width: 80px; /* Aumentei para ficar mais visível */
     height: 80px;
@@ -33,7 +40,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Sombraelevada */
 }
 
-/* Container do slide */
+/*Container do slide */
 .carousel-item {
     min-height: 400px; /* Altura confortável para não pular */
     transition: opacity 0.6s ease-in-out !important; /* Transição suave do Fade */
@@ -82,6 +89,7 @@
 .carousel-control-next {
     width: 5%; /* Menos área de clique para não atrapalhar o texto */
     opacity: 0.5;
+    bottom: 30%; /* Centraliza verticalmente */
 }
 
 .carousel-control-prev:hover, 
