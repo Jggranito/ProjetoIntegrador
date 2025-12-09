@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    min-height: auto;
+    margin: 1rem;
+    padding: 0;
+}
+
+#btn-anos50 {
+    margin-top: 40px; /*Alinhando o botão com o outro do botão no mesmo row*/
+}
+
+.card-img-top {
+    height: auto;
+    object-fit: cover;
+    width: auto;
+}
